@@ -8,6 +8,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="./home.css">
+  <link rel="stylesheet" href="./me.css">
   <link rel="stylesheet" href="../assets/fontawesome/css/all.min.css">
 </head>
 
@@ -64,7 +65,7 @@
       src="../assets/video/WhatsApp Video 2025-03-14 at 01.18.59_38c49bb9.mp4"></video>
     <div class="main-header">
       <div class="overlay"></div>
-      <h1>مرحبا بكم في<br /> عيادات دكتور سمايل</h1>
+      <h1 class="text1">مرحبا بكم في<br /> عيادات دكتور سمايل</h1>
       <a href="">
         <button>اعرف المزيد<i class="fa-solid fa-arrow-left fa-beat fa-xs" style="color: #000000;"></i></button>
       </a>
@@ -73,12 +74,12 @@
     <div class="num">
       <article><span>+7</span><br> عام من الخبره</article>
       <article><span>2k</span><br> جراحه ناجحه</article>
-      <article><span>20k</span><br>مرضي سعداء</article>
+      <article><span>10k</span><br>مرضي سعداء</article>
     </div>
   </header>
   <main>
     <!-- why chhose us -->
-    <section class="why-choose-us">
+    <section class="why-choose-us block">
       <h2>لماذا نحن مميزون؟</h2>
       <div class="feature">
         <span class="icon"><img src="../assets/icons/leduc-icon-1.png" alt="logo1"></span>
@@ -119,25 +120,50 @@
       </div>
     </section>
     <!-- dentist (service image) -->
-    <section class="dentist">
+    <section class="dentist block">
       <h2>
         خدمات مقدمة خصيصا لك
       </h2>
       <div class="dentistImage">
-        <figure><img src="../assets/Images/دكتور-اسنان-مدينتي.jpg" alt="dentist"></figure>
-        <figure><img src="../assets/Images/عيادة-اسنان-منيا-القمح.jpg" alt="dentist"></figure>
-        <figure><img src="../assets/Images/هل-تبحث-عن-عيادة-اسنان-بمنيا-القمح.jpg" alt="dentist"></figure>
+        <a href="#">
+        <figure class="service-box">
+          <img src="../assets/Images/دكتور-اسنان-مدينتي.jpg" alt="dentist">
+    
+          <div class="service-overlay">
+            <h3>تركيب الأسنان</h3>
+            <p>تمتع بأسنان قوية ومظهر طبيعي من خلال أحدث تقنيات تركيب الأسنان، سواء كانت تركيبات ثابتة أو متحركة، لتستعيد ثقتك وراحة فمك.</p>
+          </div>
+        </figure>
+        </a>
+        <a href="#">
+        <figure class="service-box">
+          <img src="../assets/Images/عيادة-اسنان-منيا-القمح.jpg" alt="dentist">
+          <div class="service-overlay">
+            <h3> زراعة الأسنان</h3>
+            <p>استبدل أسنانك المفقودة بحلول زراعة الأسنان الحديثة التي تمنحك مظهراً طبيعياً ووظيفة مثالية مدى الحياة.</p>
+          </div>
+        </figure>
+        </a>
+        <a href="#">
+        <figure class="service-box">
+          <img src="../assets/Images/هل-تبحث-عن-عيادة-اسنان-بمنيا-القمح.jpg" alt="dentist">
+          <div class="service-overlay">
+            <h3>تنظيف الأسنان</h3>
+            <p>حافظ على صحة فمك وأسنانك مع جلسات تنظيف احترافية تزيل الجير والبلاك لضمان نفس منعش وابتسامة مشرقة.</p>
+          </div>
+        </figure>
+      </a>
       </div>
     </section>
     <!-- emergency -->
-    <section class="emergency">
+    <section class="emergency block">
       <img src="../assets/icons/leduc-icon-5.png" alt="">
       <h2>هل لديك حالة طوارئ أسنان؟ يمكننا مساعدتك!</h2>
       <p>نادرًا ما تقع الحوادث في موعد محدد، ولكن لا داعي للانتظار! نوفر مواعيد في نفس اليوم لمساعدتك في أسرع وقت ممكن.
-        اتصل بنا الآن على <a href="#">(01112136693)</a> .</p>
+        اتصل بنا الآن على <a href="tel:201112136693+"><span>(01112136693)</span></a> .</p>
     </section>
     <!-- slider -->
-    <section class="slider">
+    <section class="slider block">
       <!-- right slider -->
       <figur class="rightImage">
         <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
@@ -146,10 +172,10 @@
               <img src="../assets/Images/image-slider-1.jpg" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
-              <img src="../assets/Images/image-slider-1.jpg" class="d-block w-100" alt="...">
+              <img src="../assets/Images/image-slider-2.jpg" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
-              <img src="../assets/Images/image-slider-1.jpg" class="d-block w-100" alt="...">
+              <img src="../assets/Images/image-slider-3.jpg" class="d-block w-100" alt="...">
             </div>
           </div>
           <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
@@ -169,19 +195,39 @@
         <img src="../assets/Images/figure.webp" alt="">
       </figur>
     </section>
+  <!-- section for patient review -->
+    <section class="success-section">
+      <h2>ابتسامات عملائنا</h2>
+      <p>نفتخر بمشاركة قصص نجاح عملائنا والتحولات المذهلة التي حققوها.</p>
+      <div class="video-container">
+          <div class="video-box">
+              <video src="../assets/video/dr-smiles_com_1.mp4" controls ></video>
+          </div>
+          <div class="video-box">
+              <video src="../assets/video/dr-smiles_com2.mp4" controls ></video>
+          </div>
+          <div class="video-box">
+              <video src="../assets/video/dr-smiles_com3.mp4" controls ></video>
+          </div>
+          <div class="video-box">
+              <video src="../assets/video/dr-smiles_com4.mp4" controls ></video>
+          </div>
+      </div>
+  </section>
+  
   </main>
   <!-- start footer -->
   <footer>
     <!-- top footer -->
-    <section class="topFooter">
+    <section class="topFooter block">
       <article class="top">
-        <a href="tel:201112136693+">
+        <a href="tel:201112136693+" target="_blank">
           <i class="fa-solid fa-phone fa-sm"></i>
           <p>201112136693+<span>للاستفسارات؟اتصل بنا.</span></p>
         </a>
       </article>
       <article class="top">
-        <a href="mailto:Drsmile659@gmail.com">
+        <a href="mailto:Drsmile659@gmail.com" target="_blank">
           <i class="fa-solid fa-envelope fa-sm"></i>
           <p>Drsmile659@gmail.com <span>هل انت تحتاج الدعم؟ارسل لنا بريدا الكترونيا</span></p>
         </a>
@@ -207,9 +253,9 @@
             نحن نفتح أبوابنا في الصباح والمساء وعطلات نهاية الأسبوع حتى تتمكن من رؤية الدكتور عندما تحتاج إليه.</p>
         </div>
         <div class="socialLinks">
-          <a href=""><i class="fa-brands fa-whatsapp fa-xs"></i></a>
-          <a href=""><i class="fa-brands fa-facebook fa-xs"></i></a>
-          <a href=""><i class="fa-brands fa-instagram fa-xs"></i></a>
+          <a href="https://wa.me/201112136693" target="_blank"><i class="fa-brands fa-whatsapp fa-xs"></i></a>
+          <a href="https://www.facebook.com/dr.smile.dental13" target="_blank"><i class="fa-brands fa-facebook fa-xs"></i></a>
+          <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.instagram.com%2FDr_smile_dental_clinic&h=AT0WH8BYpdQBROiwUCghwAhOgyRLvx4VCOB6Owv1fhykkuHhzMIsTc6m5TwymVy-kg_yT0h-nD-oNRmHdOGxFD0LXh7BhRQ4c0RVTvVqAn04krKtcg48Plu2DpKKSlG7l1WL15gPCpwo-ySo9OCZ" target="_blank"><i class="fa-brands fa-instagram fa-xs" target="_blank"></i></a>
         </div>
       </article>
       <!-- middle footer -->
