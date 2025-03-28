@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>dr/smile</title>
+  <title>DR.Smile</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="./home.css">
@@ -17,7 +17,7 @@
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <!-- logo -->
     <div class="container-fluid">
-      <a class="navbar-brand" href="#"><img src="../assets/Images/logo.png" alt="logo"></a>
+      <a class="navbar-brand" href="#"><img src="../assets/Images/logo_colored.png" alt="logo"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -25,10 +25,10 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active-warning" aria-current="page" href="#">الصفحه الرئيسية</a>
+            <a class="nav-link active-warning active" aria-current="page" href="#">الصفحه الرئيسية</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">من نحن</a>
+            <a class="nav-link" href="../about-page/about.html">من نحن</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">قبل وبعد</a>
@@ -78,8 +78,31 @@
     </div>
   </header>
   <main>
+       <!-- dentistry done right -->
+       <section class="dentistry contianerr">
+        <div class="den">
+          <figure>
+            <img src="../assets/Images/photo_2025-03-18_05-01-41.jpg" alt="image">
+          </figure>
+          <div>
+            <h2>طب الأسنان كما يجب أن يكون</h2>
+            <p class="fsp">
+              نرحب بالمرضى من جميع الأعمار، من الأطفال بدءًا من 3 سنوات وحتى كبار السن! فريقنا ملتزم ببناء علاقات تدوم مدى
+              الحياة من خلال تجارب إيجابية، مع تقديم:
+            </p>
+            <ul>
+              <li> <i class="fa-solid fa-check fa-ls" style="color: #e7ca71;"></i>تسعير شفاف </li>
+              <li> <i class="fa-solid fa-check fa-ls" style="color: #e7ca71;"></i> ضمان لا مثيل له</li>
+              <li><i class="fa-solid fa-check fa-ls" style="color: #e7ca71;"></i>تبيض مجاني مدي الحياة!</li>
+            </ul>
+            <p class="quote">
+              كلمتنا هي عهدنا. نعدك بتقديم الخدمة بالشكل الصحيح، في الوقت المناسب، وبسعرمناسب".
+            </p>
+          </div>
+        </div>
+      </section>
     <!-- why chhose us -->
-    <section class="why-choose-us block">
+    <section class="why-choose-us block contianerr">
       <h2>لماذا نحن مميزون؟</h2>
       <div class="feature">
         <span class="icon"><img src="../assets/icons/leduc-icon-1.png" alt="logo1"></span>
@@ -120,7 +143,7 @@
       </div>
     </section>
     <!-- dentist (service image) -->
-    <section class="dentist block">
+    <section class="dentist block contianerr">
       <h2>
         خدمات مقدمة خصيصا لك
       </h2>
@@ -154,49 +177,23 @@
         </figure>
       </a>
       </div>
+      <div class="service-button">
+        <a href="#">
+        <button>مزيد من الخدمات  <i class="fa-solid fa-arrow-left fa-beat fa-xs"
+          style="color: #000000;"></i></button>
+        </a>
+      </div>
     </section>
     <!-- emergency -->
-    <section class="emergency block">
+    <section class="emergency block contianerr">
       <img src="../assets/icons/leduc-icon-5.png" alt="">
       <h2>هل لديك حالة طوارئ أسنان؟ يمكننا مساعدتك!</h2>
       <p>نادرًا ما تقع الحوادث في موعد محدد، ولكن لا داعي للانتظار! نوفر مواعيد في نفس اليوم لمساعدتك في أسرع وقت ممكن.
         اتصل بنا الآن على <a href="tel:201112136693+"><span>(01112136693)</span></a> .</p>
     </section>
-    <!-- slider -->
-    <section class="slider block">
-      <!-- right slider -->
-      <figur class="rightImage">
-        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="../assets/Images/image-slider-1.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="../assets/Images/image-slider-2.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="../assets/Images/image-slider-3.jpg" class="d-block w-100" alt="...">
-            </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
-        <!-- left image in slider section -->
-      </figur>
-      <figur class="leftImage">
-        <img src="../assets/Images/figure.webp" alt="">
-      </figur>
-    </section>
+   
   <!-- section for patient review -->
-    <section class="success-section">
+    <section class="success-section contianerr">
       <h2>ابتسامات عملائنا</h2>
       <p>نفتخر بمشاركة قصص نجاح عملائنا والتحولات المذهلة التي حققوها.</p>
       <div class="video-container">
@@ -214,91 +211,88 @@
           </div>
       </div>
   </section>
-  
+     <!-- visit us -->
+     <section class="visitUs contianerr">
+      <div>
+        <h2>تفضل بزيارتنا</h2>
+        <p class="fsp">"في مركز دكتور سمايل، نقدّم لك أفضل خدمات طب الأسنان بأسعار مناسبة وبجودة عالية. موقعنا المميز
+          بيوفر لك سهولة الوصول وتجربة مريحة من أول زيارة. اهتم بصحتك وابتسامتك معنا، لأن راحتك وأمانك أولويتنا!"
+        </p>
+        <p class="scp"><i class="fa-solid fa-map-location-dot fa-xl" style="color: #307085;"></i>
+          بجوار حديقة الطفل, اول طريق شوبر، طنطا (قسم 2)، قسم أول طنطا، محافظة الغربية 6645617
+        </p>
+        <a href="https://www.google.com/maps?ll=30.80756,30.993083&z=9&t=m&hl=ar&gl=EG&mapclient=embed&cid=14163643299186942768"
+          target="_blank">احصل علي الاتجاهات</a>
+        <p class="thp"><i class="fa-solid fa-clock fa-xl" style="color: #307085;"></i><span>مواعيد
+            العمل</span>السبت_الخميس9:00ص-10:00م</p>
+      </div>
+      <figure>
+        <img src="../assets/Images/Screenshot 2025-03-18 024742.png" alt="image">
+      </figure>
+    </section>
+    <section class="location contianerr">
+      <h3>موقعنا على الخريطة</h3>
+      <div class="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d405193.0663459682!2d31.43299496630207!3d30.692510545002726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f7c918a4660853%3A0xc48f5e89d5612330!2sDr.smile!5e0!3m2!1sar!2seg!4v1742239677782!5m2!1sar!2seg"
+          width="1200" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </section>
   </main>
   <!-- start footer -->
-  <footer>
-    <!-- top footer -->
-    <section class="topFooter block">
-      <article class="top">
-        <a href="tel:201112136693+" target="_blank">
-          <i class="fa-solid fa-phone fa-sm"></i>
-          <p>201112136693+<span>للاستفسارات؟اتصل بنا.</span></p>
-        </a>
-      </article>
-      <article class="top">
-        <a href="mailto:Drsmile659@gmail.com" target="_blank">
-          <i class="fa-solid fa-envelope fa-sm"></i>
-          <p>Drsmile659@gmail.com <span>هل انت تحتاج الدعم؟ارسل لنا بريدا الكترونيا</span></p>
-        </a>
-      </article>
-      <article class="top">
-        <a href="#">
-          <i class="fa-solid fa-clock fa-sm"></i>
-          <p>متواجدون معكم طوال الوقت<span>السبت-الخميس 9:00ص-10:00</span></p>
-        </a>
-      </article>
-    </section>
-    <!-- bottom footer -->
-    <section class="bottomFooter">
-      <!-- right footer -->
-      <article class="bottom1">
-        <div>
-          <h2>
-            عن مركزنا
-          </h2>
-          <p>مجموعة عيادات دكتور سمايل حيث تلتقي الخبرة والجودة والجمال بثقة كبيرة في نوعية الخدمات التي نقدمها.
-            افضل اسعار لعمليات الاسنان بدون اي تأثير على الجودة اللي تستحقها</p>
-          <p>أوقات الانتظار لدينا قصيرة، ويمكنك توفير المزيد من الوقت عن طريق التسجيل لزيارتك عبر الإنترنت
-            نحن نفتح أبوابنا في الصباح والمساء وعطلات نهاية الأسبوع حتى تتمكن من رؤية الدكتور عندما تحتاج إليه.</p>
+  <footer class="contianerr">
+    <article class="firstFooter">
+      <img src="../assets/Images/logo_white (1).png" alt="logo">
+      <p>مجموعة عيادات دكتور سمايل حيث تلتقي الخبرة والجودة والجمال بثقة كبيرة في نوعية الخدمات التي نقدمها.
+        افضل اسعار لعمليات الاسنان بدون اي تأثير على الجودة اللي تستحقها</p>
+      <p class="day"><span>مواعيد العمل</span>السبت_الخميس9:00ص-10:00م</p>
+      <a href="tel:+201112136693" dir="ltr">(+2)01112136693</a>
+    </article>
+
+    <article class="scFooter">
+      <h4>الأقسام</h4>
+      <ul class="practice">
+        <li><a href="">من نحن</a></li>
+        <li><a href="">قبل وبعد</a></li>
+        <li><a href="">مقالات تهمك</a></li>
+        <li><a href="">إستطلاع رأي</a></li>
+      </ul>
+    </article>
+
+    <article class="scFooter">
+      <h4>خدماتنا</h4>
+      <ul class="practice">
+        <li><a href="#">تقويم أسنان</a></li>
+        <li><a href="#">تنظيف الأسنان</a></li>
+        <li><a href="#">تبيض الأسنان</a></li>
+        <li><a href="#">تركيب الأسنان</a></li>
+        <li><a href="#">زراعة الأسنان</a></li>
+        <li><a href="#"> الڤينير</a></li>
+      </ul>
+    </article>
+
+    <article class="foFooter">
+      <h4>تابعنا علي</h4>
+      <div class="socialLinks2">
+        <a href=""><i class="fa-brands fa-facebook fa-xs"></i></a>
+        <a href=""><i class="fa-brands fa-instagram fa-xs"></i></a>
+        <a href=""><i class="fa-brands fa-whatsapp fa-xs"></i></a>
+      </div>
+      <div>
+        <div class="endFooter">
+          <p class="rights">© 2025 جميع الحقوق محفوظة</p>
         </div>
-        <div class="socialLinks">
-          <a href="https://wa.me/201112136693" target="_blank"><i class="fa-brands fa-whatsapp fa-xs"></i></a>
-          <a href="https://www.facebook.com/dr.smile.dental13" target="_blank"><i class="fa-brands fa-facebook fa-xs"></i></a>
-          <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.instagram.com%2FDr_smile_dental_clinic&h=AT0WH8BYpdQBROiwUCghwAhOgyRLvx4VCOB6Owv1fhykkuHhzMIsTc6m5TwymVy-kg_yT0h-nD-oNRmHdOGxFD0LXh7BhRQ4c0RVTvVqAn04krKtcg48Plu2DpKKSlG7l1WL15gPCpwo-ySo9OCZ" target="_blank"><i class="fa-brands fa-instagram fa-xs" target="_blank"></i></a>
-        </div>
-      </article>
-      <!-- middle footer -->
-      <article class="bottom2">
-        <h2>فروعنا</h2>
-        <ul class="list">
-          <li>فرع القاهرة
-            ابو داوود الظاهري – النادى الاهلي – مدينة نصر ميديكال سنتر ٣ بجوار مدرسة منارة هليوبوليس – الدور التاني</li>
-          <li>فرع طنطا
-            بجوار حديقة الطفل, اول طريق شوبر، طنطا (قسم2)
-          </li>
-          <li>فرع المحلة الكبرى
-            ابراج الشركة المصرية أعلى نشأت الحصاوى للمفروشات الدور الـ 5، المحلة الكبرى (قسم 2)
-          </li>
-        </ul>
-      </article>
-      <!-- left footer -->
-      <article class="bottom3">
-        <h2>خدماتنا</h2>
-        <div class="serviceLink">
-          <div>
-            <ul class="list">
-              <li><a href="#">تقويم أسنان</a></li>
-              <li><a href="#">تنظيف الأسنان</a></li>
-              <li><a href="#">تبيض الأسنان</a></li>
-            </ul>
-          </div>
-          <div>
-            <ul class="list">
-              <li><a href="#">تركيب الأسنان</a></li>
-              <li><a href="#">زراعة الأسنان</a></li>
-              <li><a href="#"> الڤينير</a></li>
-            </ul>
-          </div>
-        </div>
-      </article>
-    </section>
-    <!-- end footer -->
-    <div class="endFooter">
-      <p class="rights">© 2025 جميع الحقوق محفوظة</p>
-    </div>
+      </div>
+    </article>
   </footer>
+  <button id="backToTop">↑</button>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
   integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+  <script src="./me.js"></script>
 </html>
